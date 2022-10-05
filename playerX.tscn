@@ -5,6 +5,7 @@
 [node name="playerX" type="KinematicBody2D"]
 
 [node name="polygons" type="Node2D" parent="."]
+scale = Vector2( 0.5, 0.5 )
 
 [node name="tentacleBR" type="Polygon2D" parent="polygons"]
 position = Vector2( -81, -52 )
@@ -48,19 +49,20 @@ bones = [ "face", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.
 
 [node name="skeleton" type="Skeleton2D" parent="."]
 rotation = -0.00807422
+scale = Vector2( 0.5, 0.5 )
 
 [node name="face" type="Bone2D" parent="skeleton"]
-position = Vector2( 451.683, 412.66 )
-scale = Vector2( 0.710922, 0.15898 )
+position = Vector2( 460, 554 )
 rest = Transform2D( 1, 0, 0, 1, 460, 554 )
 
 [node name="tBR1" type="Bone2D" parent="skeleton/face"]
 position = Vector2( 110, 141 )
+rotation = -0.0717296
 rest = Transform2D( 1, 0, 0, 1, 110, 141 )
 
 [node name="tBR2" type="Bone2D" parent="skeleton/face/tBR1"]
 position = Vector2( 121, 123 )
-rotation = 0.883606
+rotation = 0.864171
 rest = Transform2D( 0.634368, 0.773032, -0.773032, 0.634368, 121, 123 )
 default_length = 200.0
 
